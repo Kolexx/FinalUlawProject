@@ -1,0 +1,17 @@
+{
+  "name": "385907-korede-solomon-bookshare-project",
+  "version": "1.0.0",
+  "description": "Final Project",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon api/app.js",
+    "start": "node api/app.js"
+  },
+  "author": "Korede Solomon Odeyemi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
