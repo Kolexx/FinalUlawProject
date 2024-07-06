@@ -87,6 +87,15 @@ userSchema.statics.login = async function (email, password) {
   }
   return user;
 };
-const User = mongoose.model('User', userSchema);
 
+// userSchema.statics.forgetPassword = async function (email) {
+//   const user = await this.findOne({ email });
+//   console.log(email);
+//   if (!user) {
+//     throw new Error('User Not Registered');
+//   }
+//   return user;
+// };
+
+const User = mongoose.model('User', userSchema);
 export default User;
