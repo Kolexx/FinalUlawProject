@@ -86,7 +86,7 @@ export const resetPassword = async (req, res) => {
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    const { id } = decoded;
+    const id = decoded._id;
 
     if (!validator.isStrongPassword(password)) {
       return res.status(400).send({
